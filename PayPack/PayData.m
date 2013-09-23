@@ -24,10 +24,23 @@
 @synthesize formCost;
 @synthesize desgravamenInsurance;
 
+-(id)init {
+    self = [super init];
+    
+    if (self != nil) {
+        disbursementDate = [NSDate date];
+    }
+    
+    return self;
+}
+
 -(void) calculate {
     NSLog(@"Calculte the other values");
-    feesNumber = [NSNumber numberWithDouble:(timeLimit.doubleValue * (360 / lapseBetweenFees.doubleValue))];
-    periodVariableRate = [NSNumber numberWithDouble:spread.doubleValue * referenceRate.doubleValue];
+    
+    feesNumber = [timeLimit decimalNumberByMultiplyingBy:[[NSDecimalNumber decimalNumberWithString:@"360"] decimalNumberByDividingBy:lapseBetweenFees]];
+    
+    periodVariableRate = [spread decimalNumberByAdding:referenceRate];
+    
 }
 
 @end

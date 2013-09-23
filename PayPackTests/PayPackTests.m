@@ -36,13 +36,24 @@
     
     PayData *payData = [[PayData alloc] init];
     
-    [payData setCreditAmount:[NSNumber numberWithDouble:100]];
-    [payData setTimeLimit:[NSNumber numberWithDouble:25]];
-    [payData setLapseBetweenFees:[NSNumber numberWithDouble:30]];
+    [payData setCreditAmount:[NSDecimalNumber decimalNumberWithString:@"100"]];
+    [payData setTimeLimit:[NSDecimalNumber decimalNumberWithString:@"25"]];
+    [payData setLapseBetweenFees:[NSDecimalNumber decimalNumberWithString:@"30"]];
+    
+    [payData setFixedRatePeriod:[NSDecimalNumber decimalNumberWithString:@"12"]];
+    [payData setFixedRate:[NSDecimalNumber decimalNumberWithString:@"6.00"]];
+    [payData setReferenceRate:[NSDecimalNumber decimalNumberWithString:@"1.55"]];
+    [payData setSpread:[NSDecimalNumber decimalNumberWithString:@"6.00"]];
+    [payData setLapseBetweenFees:[NSDecimalNumber decimalNumberWithString:@"30"]];
+    [payData setGracePeriod:[NSDecimalNumber decimalNumberWithString:@"0.00"]];
+    [payData setFormCost:[NSDecimalNumber decimalNumberWithString:@"0.00"]];
+    [payData setDesgravamenInsurance:[NSDecimalNumber decimalNumberWithString:@"1.00"]];
     
     [payData calculate];
     
-    XCTAssertEqual([payData.feesNumber doubleValue], [[NSNumber numberWithDouble:300] doubleValue], @"Son iguales");
+    XCTAssertEqual([payData.feesNumber doubleValue], [[NSDecimalNumber decimalNumberWithString:@"300"] doubleValue], @"No Son iguales");
+    
+    XCTAssertEqual([payData.periodVariableRate doubleValue], [[NSDecimalNumber decimalNumberWithString:@"7.55"] doubleValue], @"La Tasa de Periodo Variable NO es igual!");
     
 }
 
