@@ -26,8 +26,8 @@
 
 -(void) calculate {
     NSLog(@"Calculte the other values");
-    feesNumber = [NSNumber numberWithFloat:timeLimit.doubleValue * (360 / lapseBetweenFees.doubleValue)];
-    periodVariableRate = [NSNumber numberWithFloat:spread.doubleValue * referenceRate.doubleValue];
+    feesNumber = [NSNumber numberWithDouble:(timeLimit.doubleValue * (360 / lapseBetweenFees.doubleValue))];
+    periodVariableRate = [NSNumber numberWithDouble:spread.doubleValue * referenceRate.doubleValue];
 }
 
 @end

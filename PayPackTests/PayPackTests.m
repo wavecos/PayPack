@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "PayData.h"
 
 @interface PayPackTests : XCTestCase
 
@@ -28,7 +29,21 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    //XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+}
+
+-(void) testPayData {
+    
+    PayData *payData = [[PayData alloc] init];
+    
+    [payData setCreditAmount:[NSNumber numberWithDouble:100]];
+    [payData setTimeLimit:[NSNumber numberWithDouble:25]];
+    [payData setLapseBetweenFees:[NSNumber numberWithDouble:30]];
+    
+    [payData calculate];
+    
+    XCTAssertEqual([payData.feesNumber doubleValue], [[NSNumber numberWithDouble:300] doubleValue], @"Son iguales");
+    
 }
 
 @end
