@@ -22,6 +22,7 @@
 		7947C4A117EFD813004A4A2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7947C48017EFD813004A4A2E /* UIKit.framework */; };
 		7947C4A917EFD813004A4A2E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7947C4A717EFD813004A4A2E /* InfoPlist.strings */; };
 		7947C4AB17EFD813004A4A2E /* PayPackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7947C4AA17EFD813004A4A2E /* PayPackTests.m */; };
+		7947C4B617EFEE7A004A4A2E /* PayData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7947C4B517EFEE7A004A4A2E /* PayData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		7947C4A617EFD813004A4A2E /* PayPackTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PayPackTests-Info.plist"; sourceTree = "<group>"; };
 		7947C4A817EFD813004A4A2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7947C4AA17EFD813004A4A2E /* PayPackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayPackTests.m; sourceTree = "<group>"; };
+		7947C4B417EFEE7A004A4A2E /* PayData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayData.h; sourceTree = "<group>"; };
+		7947C4B517EFEE7A004A4A2E /* PayData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				7947C49517EFD813004A4A2E /* ViewController.m */,
 				7947C49717EFD813004A4A2E /* Images.xcassets */,
 				7947C48317EFD813004A4A2E /* Supporting Files */,
+				7947C4B417EFEE7A004A4A2E /* PayData.h */,
+				7947C4B517EFEE7A004A4A2E /* PayData.m */,
 			);
 			path = PayPack;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7947C4B617EFEE7A004A4A2E /* PayData.m in Sources */,
 				7947C49617EFD813004A4A2E /* ViewController.m in Sources */,
 				7947C48D17EFD813004A4A2E /* AppDelegate.m in Sources */,
 				7947C48917EFD813004A4A2E /* main.m in Sources */,
