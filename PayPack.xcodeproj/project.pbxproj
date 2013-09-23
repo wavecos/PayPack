@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AD5E12A17F0CA8900890D72 /* FeeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5E12917F0CA8900890D72 /* FeeTests.m */; };
+		6AD5E12D17F0CCDA00890D72 /* Fee.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD5E12C17F0CCDA00890D72 /* Fee.m */; };
 		7947C47D17EFD813004A4A2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7947C47C17EFD813004A4A2E /* Foundation.framework */; };
 		7947C47F17EFD813004A4A2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7947C47E17EFD813004A4A2E /* CoreGraphics.framework */; };
 		7947C48117EFD813004A4A2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7947C48017EFD813004A4A2E /* UIKit.framework */; };
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6AD5E12917F0CA8900890D72 /* FeeTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeeTests.m; sourceTree = "<group>"; };
+		6AD5E12B17F0CCDA00890D72 /* Fee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fee.h; sourceTree = "<group>"; };
+		6AD5E12C17F0CCDA00890D72 /* Fee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fee.m; sourceTree = "<group>"; };
 		7947C47917EFD813004A4A2E /* PayPack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayPack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7947C47C17EFD813004A4A2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7947C47E17EFD813004A4A2E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +122,10 @@
 		7947C48217EFD813004A4A2E /* PayPack */ = {
 			isa = PBXGroup;
 			children = (
+				7947C4B417EFEE7A004A4A2E /* PayData.h */,
+				7947C4B517EFEE7A004A4A2E /* PayData.m */,
+				6AD5E12B17F0CCDA00890D72 /* Fee.h */,
+				6AD5E12C17F0CCDA00890D72 /* Fee.m */,
 				7947C48B17EFD813004A4A2E /* AppDelegate.h */,
 				7947C48C17EFD813004A4A2E /* AppDelegate.m */,
 				7947C48E17EFD813004A4A2E /* Main_iPhone.storyboard */,
@@ -125,8 +134,6 @@
 				7947C49517EFD813004A4A2E /* ViewController.m */,
 				7947C49717EFD813004A4A2E /* Images.xcassets */,
 				7947C48317EFD813004A4A2E /* Supporting Files */,
-				7947C4B417EFEE7A004A4A2E /* PayData.h */,
-				7947C4B517EFEE7A004A4A2E /* PayData.m */,
 			);
 			path = PayPack;
 			sourceTree = "<group>";
@@ -146,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				7947C4AA17EFD813004A4A2E /* PayPackTests.m */,
+				6AD5E12917F0CA8900890D72 /* FeeTests.m */,
 				7947C4A517EFD813004A4A2E /* Supporting Files */,
 			);
 			path = PayPackTests;
@@ -262,6 +270,7 @@
 				7947C49617EFD813004A4A2E /* ViewController.m in Sources */,
 				7947C48D17EFD813004A4A2E /* AppDelegate.m in Sources */,
 				7947C48917EFD813004A4A2E /* main.m in Sources */,
+				6AD5E12D17F0CCDA00890D72 /* Fee.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AD5E12A17F0CA8900890D72 /* FeeTests.m in Sources */,
 				7947C4AB17EFD813004A4A2E /* PayPackTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,6 +490,7 @@
 				7947C4B017EFD813004A4A2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7947C4B117EFD813004A4A2E /* Build configuration list for PBXNativeTarget "PayPackTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +499,7 @@
 				7947C4B317EFD813004A4A2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
