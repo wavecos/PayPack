@@ -39,7 +39,7 @@
     [payData setLapseBetweenFees:[NSDecimalNumber decimalNumberWithString:@"30"]];
     
     // Fecha de Desembolso
-    [payData setDisbursementDate:[dateFormatter dateFromString:@"10/23/2013"]];
+    [payData setDisbursementDate:[dateFormatter dateFromString:@"9/23/2013"]];
     
     [payData setFixedRatePeriod:[NSDecimalNumber decimalNumberWithString:@"12"]];
     [payData setFixedRate:[NSDecimalNumber decimalNumberWithString:@"6.00"]];
@@ -62,14 +62,14 @@
 - (void) testExample {
     
     [fee setSequence:1];
-    [fee calculateFeeWithData:payData];
-    
+    //[fee calculateFeeWithData:payData];
     
     XCTAssertEqual(fee.sequence, 1, @"No es la Cuota # 001");
     
     NSDate *evalDate = [dateFormatter dateFromString:@"10/23/2013"];
     
-    XCTAssertEqual(fee.date, evalDate, @"Las Fechas no son iguales");
+    XCTAssertEqual([fee.date timeIntervalSince1970], [evalDate timeIntervalSince1970], @"Las Fecha para la Cuota # 001 no es correcta");
+    
     
 }
 

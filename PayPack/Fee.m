@@ -12,15 +12,16 @@
 
 @synthesize sequence;
 @synthesize date;
+@synthesize toCapitalFixed;
+@synthesize interestFixed;
+@synthesize insuranceFixed;
+@synthesize feeFixed;
+@synthesize balanceFixed;
 
--(void) calculateFeeWithData:(PayData *)payData {
-    NSLog(@"Calculate Fee with PayData");
-    
-    if (sequence == 1) {
-        //date = [payData.disbursementDate dateByAddingTimeInterval:60*60*24*[payData.lapseBetweenFees doubleValue]];
-        date = [payData.disbursementDate dateByAddingTimeInterval:60*60*24*30];
-    }
-    
-}
+@synthesize toCapitalVariable;
+@synthesize interestVariable;
+@synthesize insuranceVariable;
+@synthesize feeVariable;
+@synthesize balanceVariable;
 
 @end

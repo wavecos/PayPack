@@ -25,6 +25,7 @@
 		7947C4A917EFD813004A4A2E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7947C4A717EFD813004A4A2E /* InfoPlist.strings */; };
 		7947C4AB17EFD813004A4A2E /* PayPackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7947C4AA17EFD813004A4A2E /* PayPackTests.m */; };
 		7947C4B617EFEE7A004A4A2E /* PayData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7947C4B517EFEE7A004A4A2E /* PayData.m */; };
+		79CDFD4417F12D0F001E1BEB /* PayService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CDFD4317F12D0F001E1BEB /* PayService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		7947C4AA17EFD813004A4A2E /* PayPackTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayPackTests.m; sourceTree = "<group>"; };
 		7947C4B417EFEE7A004A4A2E /* PayData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayData.h; sourceTree = "<group>"; };
 		7947C4B517EFEE7A004A4A2E /* PayData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayData.m; sourceTree = "<group>"; };
+		79CDFD4217F12D0F001E1BEB /* PayService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayService.h; sourceTree = "<group>"; };
+		79CDFD4317F12D0F001E1BEB /* PayService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 			children = (
 				7947C4B417EFEE7A004A4A2E /* PayData.h */,
 				7947C4B517EFEE7A004A4A2E /* PayData.m */,
+				79CDFD4217F12D0F001E1BEB /* PayService.h */,
+				79CDFD4317F12D0F001E1BEB /* PayService.m */,
 				6AD5E12B17F0CCDA00890D72 /* Fee.h */,
 				6AD5E12C17F0CCDA00890D72 /* Fee.m */,
 				7947C48B17EFD813004A4A2E /* AppDelegate.h */,
@@ -266,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79CDFD4417F12D0F001E1BEB /* PayService.m in Sources */,
 				7947C4B617EFEE7A004A4A2E /* PayData.m in Sources */,
 				7947C49617EFD813004A4A2E /* ViewController.m in Sources */,
 				7947C48D17EFD813004A4A2E /* AppDelegate.m in Sources */,

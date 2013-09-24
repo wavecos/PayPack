@@ -23,6 +23,8 @@
 @synthesize gracePeriod;
 @synthesize formCost;
 @synthesize desgravamenInsurance;
+@synthesize hiddenX;
+@synthesize hiddenY;
 
 -(id)init {
     self = [super init];
@@ -37,7 +39,10 @@
 -(void) calculate {
     NSLog(@"Calculte the other values");
     
-    feesNumber = [timeLimit decimalNumberByMultiplyingBy:[[NSDecimalNumber decimalNumberWithString:@"360"] decimalNumberByDividingBy:lapseBetweenFees]];
+    hiddenX = [gracePeriod decimalNumberByDividingBy:[NSDecimalNumber decimalNumberWithString:@"12.00"]];
+    hiddenY = [[fixedRatePeriod decimalNumberByMultiplyingBy:[NSDecimalNumber decimalNumberWithString:@"30.00"]] decimalNumberByDividingBy:lapseBetweenFees];
+    
+    feesNumber = [[timeLimit decimalNumberByMultiplyingBy:[[NSDecimalNumber decimalNumberWithString:@"360"] decimalNumberByDividingBy:lapseBetweenFees]] integerValue];
     
     periodVariableRate = [spread decimalNumberByAdding:referenceRate];
     

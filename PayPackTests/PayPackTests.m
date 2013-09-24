@@ -51,7 +51,7 @@
     
     [payData calculate];
     
-    XCTAssertEqual([payData.feesNumber doubleValue], [[NSDecimalNumber decimalNumberWithString:@"300"] doubleValue], @"No Son iguales");
+    XCTAssertEqual(payData.feesNumber, 300, @"No Son iguales");
     
     XCTAssertEqual([payData.periodVariableRate doubleValue], [[NSDecimalNumber decimalNumberWithString:@"7.55"] doubleValue], @"La Tasa de Periodo Variable NO es igual!");
     
